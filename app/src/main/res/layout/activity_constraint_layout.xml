@@ -62,6 +62,7 @@
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="260dp"
@@ -87,7 +88,62 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@color/design_default_color_error"
+                android:text="长文本长文本长文本长文本长文本文本长文本长文本"
+                android:textColor="@android:color/white"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintEnd_toEndOf="@+id/sun"
+                app:layout_constraintHorizontal_bias="0.508"
+                app:layout_constraintStart_toStartOf="@+id/sun"
+                app:layout_constraintTop_toBottomOf="@+id/sun" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/teal_200"
+                android:text="长文本长文本"
+                android:textColor="@android:color/white"
+                android:textSize="28sp"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                app:layout_goneMarginStart="16dp"
+                android:id="@+id/avatar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@mipmap/ic_launcher_round"
+                app:layout_constraintStart_toEndOf="@id/textview"
+                app:layout_constraintTop_toTopOf="@id/textview" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <Button
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="-------------------宽高比2：1-------------------"
+            app:layout_constraintDimensionRatio="2:1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
