@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.android.code.constraintlayout.ConstraintLayoutActivity
+import com.android.code.motionlayout.MotionLayout1Activity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -13,6 +14,10 @@ class MainActivity : AppCompatActivity() {
 
         mConstraintLayout.setOnClickListener {
             startActivity(Intent(this, ConstraintLayoutActivity::class.java))
+        }
+
+        mMotionLayout1.setOnClickListener {
+            startActivity(Intent(this, MotionLayout1Activity::class.java))
         }
     }
 }

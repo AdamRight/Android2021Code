@@ -19,6 +19,13 @@
             android:layout_height="wrap_content"
             android:text="ConstraintLayout" />
 
+        <Button
+            android:id="@+id/mMotionLayout1"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MotionLayout1" />
+
     </LinearLayout>
 
 </androidx.core.widget.NestedScrollView>
